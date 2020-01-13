@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, sans-serif;
+    background: url(https://gfb.global.ssl.fastly.net/wp-content/uploads/2016/12/kombucha.jpg),linear-gradient(rgb(209, 118, 33),#b66905);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: rgb(235, 161, 42);
+    padding: 0.05em;
+    display: flex;
+    border-radius: 0.4em;
+}
+
+.logo{
+    margin-left: 3em;
+    font-family: 'Plate Gothic';
+}
+
+ul {
+    margin-left: 9em;
+    padding-top: 1.35em;
+}
+
+nav li {
+    display: inline;
+    font-size: 1.5em;
+}
+
+nav a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.welcome{
+    background-color: rgba(255, 222, 161, 0.959);
+    width: 60%;
+    text-align: center;
+    border-radius: 2em;
+}
+
+.welcome h1,h2{
+    padding: 0.75em;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:link{
+    color: black;
+}
+
+nav a:visited{
+    color: rgb(255, 238, 0);
+}
+
+nav a:hover{
+    color: darkgreen;
+}
+
+nav a:active{
+    color: orange;
+}
+
+fieldset {
+    border: none;
+}
+
+form label{
+    display: block;
+}
+
+.form-control{
+    font-size: 1em;
+    background-color: rgba(255, 222, 161, 0.959);
+    border-radius: 3px;
+    width: 20%;
+}
+
+label{
+    font-size: 0.6em;
+}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Log your brews here!</h1>
+
+<div>
+    <form action="" method="POST">
+        {{ logform.hidden_tag() }}
+        <fieldset>
+            {{logform.f1date.label }}
+            {{logform.f1date(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{logform.f1duration.label }}
+            {{logform.f1duration(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{logform.flavors.label }}
+            {{logform.flavors(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{logform.f2date.label }}
+            {{logform.f2date(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{logform.f2duration.label }}
+            {{logform.f2duration(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{logform.rating.label }}
+            {{logform.rating(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{logform.notes.label }}
+            {{logform.notes(class="form-control") }}
+        </fieldset>
+        {{logform.submit(class="button") }}
+    </form>
+</div>
+
+{% endblock content %}
+
+
+
+
+<!-- f1date = StringField("1st Fermentation Start Date", validators=[DataRequired()])
+    f1duration = StringField("1st Fermentation Duration", validators=[DataRequired()])
+    flavors = StringField("Flavors added", validators=[DataRequired()])
+    f2date = StringField("2nd Fermnation Start Date", validators=[DataRequired()])
+    f2duration = StringField("2nd Fermentation Duration", validators=[DataRequired()])
+    rating = StringField("1 to 5 rating", validators=[DataRequired()])
+    notes = StringField("Notes") #Condsider TextField here -->

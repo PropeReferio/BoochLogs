@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Sign up to Log your Brews!</h1>
+
+    <div>
+        <form action="" method="POST">
+            {{ signupform.hidden_tag() }}
+            <fieldset>
+                {{ signupform.username.label }}
+                {{ signupform.username(class="form-control")}}
+            </fieldset>
+            <fieldset>
+                {{ signupform.email.label }}
+                {{ signupform.email(class="form-control")}}
+            </fieldset>
+            <fieldset>
+                {{ signupform.password.label }}
+                {{ signupform.password(class="form-control")}}
+            </fieldset>
+            <fieldset>
+                {{ signupform.confirm_pass.label }}
+                {{ signupform.confirm_pass(class="form-control")}}
+            </fieldset>
+            {{ signupform.submit(class="button") }}
+        </form>
+    </div>
+{% endblock content %}

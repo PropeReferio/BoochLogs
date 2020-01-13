@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="welcome"><h1>Welcome 
+    {% if current_user.is_authenticated %}
+        {{current_user.username}}
+    {% else %}
+    Friend
+    {% endif %}
+    to BoochLogs!</h1></div>
+
+<div class="welcome"><h2>
+    {% if current_user.is_authenticated %}
+        Check out your log below.
+    {% else %}
+    Login to record your brews!
+    {% endif %}
+</h2></div>
+{% endblock content %}
